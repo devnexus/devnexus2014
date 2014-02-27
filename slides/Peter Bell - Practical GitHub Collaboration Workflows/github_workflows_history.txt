@@ -1,0 +1,171 @@
+git --version
+git init website
+cd website
+git status
+touch index.html index.css
+git add .
+git commit -m "Added home page"
+touch about.html about.css contact.html contact.css
+git status -s
+git config --global alias.s "status -s"
+git s
+git add ab*
+git s
+git status
+git commit -m "Added about us page"
+git log
+git log --oneline
+git log --oneline --decorate --graph --all -50
+git config --global alias.lg "log --oneline --decorate --graph --all -50"
+git lg
+git s
+git checkout -b contact
+git add .
+git commit -m "Added contact us page"
+git lg
+vi index.html
+git s
+git commit -am "Added link to the contact us page"
+git lg
+git checkout master
+git merge contact
+git lg
+git reset --keep master@{1}
+git lg
+git merge --no-ff contact
+git lg
+git branch
+git branch -d contact
+git lg
+ls
+git checkout -b founders
+touch founders.html founders.css
+git add founders.html
+git commit -m "Added founders page"
+git add .
+git commit -m "Styled founders page"
+git lg
+git checkout master
+git checkout -b search
+touch search.html search.css
+git add search.html
+git commit -m "Added search page"
+git add .
+git commit -m "Styled search page"
+git s
+git lg
+git checkout master
+git merge --no-ff founders
+git lg
+git checkout search
+git branch
+git branch -d founders
+git lg
+git checkout master
+git branch -d founders
+git lg
+git checkout search
+git rebase master
+git lg
+git checkout master
+git merge --no-ff search
+git lg
+git branch -d search
+git branch
+git lg
+git remote add origin https://github.com/PeterBell/website.git
+cat .git/config
+git push -u origin master
+cat .git/config
+git push
+cd ..
+mkdir pb-2
+cd pb-2
+git clone https://github.com/PeterBell/website.git
+git lg
+cd website
+git lg
+touch pb-2.txt
+git add .
+git commit -m "Added my name to the project"
+git lg
+git pull
+git push
+cd ../..
+ls
+cd website
+git pull --rebase
+git lg
+git revert 9ed7315
+git push
+git branch
+ls
+git checkout -b cart
+touch cart.html cart.css
+git add cart.html
+git commit -m "Added shopping cart"
+git add .
+git commit -m "Styled shopping cart"
+git lg
+git push -u origin cart
+cd ..
+git status
+git clone https://github.com/PeterBell/hellogitworld.git
+cd hellogitworld
+git lg
+touch peterbell.txt
+git add .
+git commit -m "I'd like to take credit for other peoples work on this project :)"
+git push
+cd ../
+ls
+cd website
+git lg
+touch cart-tests.txt
+git add .
+git commit -m "Now we got some tests"
+git push
+git pull --rebase
+git checkout master
+git pull
+git branch -d cart
+git lg
+ls
+git checkout -b test
+touch test1.html test2.html test3.html test4.html
+git add test1.html
+git commit -m "Test 1"
+git add test2.html
+git commit -m "Test 2"
+git add test3.html
+git commit -m "Test 3"
+git add test4.html
+git commit -m "Test 4"
+git s
+git lg
+git rebase -i HEAD~4
+git lg
+git push -u origin test
+git checkout master
+git merge --no-ff test
+git push
+git tag -a p1.0.0
+git lg
+touch testme.txt
+git add .
+git commit -m "Whatever"
+git lg
+git show tag: p1.0.0
+git show p1.0.0
+git lg
+git checkout p1.0.0
+git lg
+git checkout -b p1.0.0branch
+git lg
+touch hotfixp1.0.0.txt
+git add .
+git commit -m "Hotfix"
+git lg
+tag -a p1.0.1
+git tag -a p1.0.1
+git lg

@@ -1,0 +1,75 @@
+settings = 
+{
+	orientation =
+	{
+		default = "portrait",
+		supported =
+		{
+			"portrait",
+			"landscape"
+		}
+    },
+
+	iphone =
+	{
+		plist =
+		{
+			UIApplicationExitsOnSuspend = false,  --This will keep your app open in the background
+			UIStatusBarHidden = true,
+			
+			CFBundleDisplayName = "Corona Test",
+			FacebookAppID = "141054052761676",
+			CFBundleURLTypes =
+            {
+                {
+                    CFBundleURLSchemes =
+                    {
+						"fb141054052761676",
+                        "wordsandcards",
+                    }
+                }
+            },
+			
+			CFBundleIconFile = "Icon.png",
+			CFBundleIconFiles = {
+				"Icon.png",
+				"Icon@2x.png",
+				"Icon-60.png",
+				"Icon-60@2x.png",
+				"Icon-72.png",
+				"Icon-72@2x.png",
+				"Icon-76.png",
+				"Icon-76@2x.png",
+				"Icon-Small-40.png",
+				"Icon-Small-40@2x.png",
+				"Icon-Small.png",
+				"Icon-Small@2x.png",
+				"Icon-Small-50.png",
+				"Icon-Small-50@2x.png"
+			 },
+			 UIAppFonts = 
+			 {
+				"Helvetica.otf",
+				"HelveticaNeue.otf",
+				"ArialRoundedMTBold.ttf",
+				"Arial.ttf",
+				"UniversLTStd-BoldCn.otf"
+			 },
+		},
+	},
+	
+	plugins =
+    {
+        -- key is the name passed to Lua's 'require()'
+        ["plugin.playhaven"] =
+        {
+            -- required
+            publisherId = "com.playhaven",
+        },
+        ["CoronaProvider.analytics.flurry"] =
+        {
+            -- required
+            publisherId = "com.coronalabs",
+        },
+    },
+}

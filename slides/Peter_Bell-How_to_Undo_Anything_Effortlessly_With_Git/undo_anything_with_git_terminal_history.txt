@@ -1,0 +1,202 @@
+git --version
+git init website
+cd website
+git branch
+touch index.html index.css
+git add .
+git commit -m "Added home page "
+git lg
+touch contact.html
+git add .
+git commit -m "Added contact pagesdfjbndsfnbds"
+git lg
+git commit --amend
+git status
+git lg
+git commit --amend
+git lg
+git commit --amend
+git lg
+ls
+touch search.html
+vi index.html
+git status
+git commit -am "added search page"
+git status
+git commit -am "Really added search page"
+git lg
+git add search.html
+git status
+git commit --amend
+git status
+git lg
+touch about.html about.css founders.html founders.css
+git status -s
+git config --alias.s "status -s"
+git config --global alias.s "status -s"
+clear
+git s
+git add *.html
+git commit -m "Added a couple of new markup files"
+git add .
+git commit -m "Styled my two new pages"
+git status
+git lg
+git reset HEAD~2
+git s
+git lg
+git add fo*
+git s
+git status
+git commit -m "Added founders page"
+git s
+git add .
+git commit -m "Added about us page"
+git s
+git lg
+git reset --soft HEAD~2
+git s
+git commit -m Added about us and founders pages"\
+
+git s
+git commit -m "Added about us and founders pages"
+git s
+git lg
+git reset --hard HEAD~2
+git lg
+ls
+git reflog
+git reset --hard 9240
+git lg
+ls
+git reset --hard HEAD~2
+ls
+git lg
+touch cart.html cart.css
+git add .
+git commit -m "Added cart"
+git lg
+git reflog
+git checkout 9240569
+git lg
+git checkout -b temp
+git lg
+git checkout master
+git merge temp
+git lg
+touch test.html
+vi index.html
+git s
+git add .
+git s
+git status
+git reset HEAD test.html
+git status
+git reset HEAD
+git status
+git reset --hard
+git status
+git add .
+git reset --hard
+git statys
+git status
+touch test2.html
+git s
+git clean -f
+git status
+git lg
+git branch
+git branch -d temp
+git branch
+git lg
+git reset --hard HEAD~1
+git lg
+git reflog
+git checkout 9240569
+git checkout -b temp
+git lg
+git checkout temp
+git rebase master
+git lg
+git checkout master
+git merge temp
+git lg
+git reset --keep master@{1}
+git lg
+git merge --no-ff temp
+git lg
+git branch -d temp
+git lg
+git branch
+ls
+git checkout -b checkout_page
+touch checkout.html
+git add .
+git commit -m "Added checkout"
+subl index.html
+git s
+git commit -am "Added link to checkout page"
+git lg
+git checkout master
+ls
+git checkout -b history
+touch history.html
+git add .
+git commit -m "Added history"
+subl index.html
+git commit -am "Added link to history page"
+git lg
+git checkout master
+git merge --no-ff checkout_page
+git lg
+git checkout history
+git rebase master
+git lg
+git status
+subl index.html
+git status
+git add .
+git status
+git rebase --continue
+git status
+git lg
+git checkout master
+git merge --no-ff history
+git lg
+git branch
+git branch -d checkout_page
+git branch -d history
+touch test1.html test2.html test3.html test4.html
+git add test1.html
+git commit -m "test 1"
+git add test2.html
+git commit -m "test 2"
+git add test3.html
+git commit -m "test 3"
+git add test4.html
+git commit -m "test 4"
+git status
+git lg
+git rebase -i
+git rebase -i HEAD~4
+git lg
+git reflog
+git reset --hard 9dbf5ac
+git lg
+git reset --hard  HEAD~2
+git lg
+git reflog
+git reset --hard 9dbf5ac
+git lg
+git rev-parse 9dbf5ac
+git rev-parse master
+git rev-parse HEAD
+git rev-parse HEAD~1
+git lg
+git revert 9dbf5ac
+git lg
+ls
+git lg
+git revert 8a75287
+ls
+git lg
